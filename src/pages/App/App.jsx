@@ -1,7 +1,25 @@
 import React from 'react';
+import { FiDownload } from "react-icons/fi";
+import { IoStar } from "react-icons/io5";
 
 const App = ({ app }) => {
     const { image, title, ratingAvg, downloads } = app;
+
+    const formatDownloads = (downloads) => {
+        if (downloads >= 1000000000) {
+            return +(downloads / 1000000000).toFixed(1) + "B";
+        }
+
+        if (downloads >= 1000000) {
+            return +(downloads / 1000000).toFixed(1) + "M";
+        }
+
+        if (downloads >= 1000) {
+            return +(downloads / 1000).toFixed(1) + "K";
+        }
+
+        return downloads.toString();
+    };
 
     // {
     //     "image": "https://i.ibb.co/forest-app.png",
@@ -39,13 +57,16 @@ const App = ({ app }) => {
 
 
     return (
-        <div className='border border-amber-300'>
-            <img src="" alt="" />
-            <h3>{title}</h3>
-            <div className='flex justify-between items-center'>
-                <p>{downloads}</p>
-                <p>{ratingAvg}</p>
+        <div className='bg-gray-900 rounded-lg overflow-hidden'>
+            <img className='' src={image} alt="" />
+            <div className='space-y-3 p-3 '>
+                <h3 className='font-semibold text-base'>{title}</h3>
+                <div className='flex justify-between items-center'>
+                    <p className='flex items-center gap-1 border border-blue-400 rounded-lg px-2'><FiDownload /> {formatDownloads(downloads)}</p>
+                    <p className='flex items-center gap-1  border border-blue-400 rounded-lg px-2'><IoStar /> {ratingAvg}</p>
+                </div>
             </div>
+
 
         </div>
     );
