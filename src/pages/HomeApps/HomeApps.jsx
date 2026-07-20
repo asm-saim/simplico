@@ -18,7 +18,7 @@ const HomeApps = () => {
             })
     }, [])
     return (
-        <div className='max-w-7xl mx-auto border'>
+        <div className='max-w-7xl mx-auto'>
             <div className='text-center space-y-3 mt-20 mb-10'>
                 <h1 className='font-semibold text-5xl'>Trending Apps</h1>
                 <p className='italic text-gray-400'>Explore All Trending Apps on the Market developed by us</p>

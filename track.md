@@ -22,4 +22,6 @@ So, far,Routes has:
 
  //There are some ways to load data.
  1. useState + useEffect.
+ 2. use  route loader in the Routes components.
+  
  
