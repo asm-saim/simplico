@@ -1,12 +1,13 @@
 import React from 'react';
-import { NavLink } from 'react-router';
+import { Link, NavLink } from 'react-router';
 import logo from "../../assets/logo.png"
+import { FaGithub } from "react-icons/fa";
 
 const Navbar = () => {
     const list = <>
-        <NavLink to="/" className={({ isActive }) => isActive ? "text-[#66a0ff]" : ""}><li className='m-3 font-semibold text-base'>Home</li></NavLink>
-        <NavLink to="/apps" className={({ isActive }) => isActive ? "text-[#66a0ff]" : ""}><li className='m-3 font-semibold text-base'>Apps</li></NavLink>
-        <NavLink to="/installation" className={({ isActive }) => isActive ? "text-[#66a0ff]" : ""}><li className='m-3 font-semibold text-base'>Installation</li></NavLink>
+        <NavLink to="/" className={({ isActive }) => isActive ? "text-blue-400" : ""}><li className='m-3 font-semibold text-base'>Home</li></NavLink>
+        <NavLink to="/apps" className={({ isActive }) => isActive ? "text-blue-400" : ""}><li className='m-3 font-semibold text-base'>Apps</li></NavLink>
+        <NavLink to="/installation" className={({ isActive }) => isActive ? "text-blue-400" : ""}><li className='m-3 font-semibold text-base'>Installation</li></NavLink>
     </>
     return (
         <div className=" shadow-sm">
@@ -22,10 +23,12 @@ const Navbar = () => {
                             {list}
                         </ul>
                     </div>
-                    <button className='flex items-center space-x-1.5 cursor-pointer px-0'>
-                        <img src={logo} className='w-8' alt="" />
-                        <a className=" text-xl font-semibold">Simplico</a>
-                    </button>
+                    <Link to="/">
+                        <button className='flex items-center space-x-1.5 cursor-pointer px-0'>
+                            <img src={logo} className='w-8' alt="" />
+                            <a className=" text-xl font-semibold">Simplico</a>
+                        </button>
+                    </Link>
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1">
@@ -33,7 +36,7 @@ const Navbar = () => {
                     </ul>
                 </div>
                 <div className="navbar-end">
-                    <a className="btn rounded-lg bg-gradient-to-br from-[#0B2F5B] to-[#3B82F6]">Contribute</a>
+                    <button className="btn border-none text-base rounded-lg bg-gradient-to-br from-[#0B2F5B] to-[#3B82F6]"><FaGithub /> Contribute</button>
                 </div>
             </div>
         </div>
