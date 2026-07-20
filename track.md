@@ -19,3 +19,7 @@ So, far,Routes has:
  component:<Root>,
  errorElement:,
  children:[]
+
+ //There are some ways to load data.
+ 1. useState + useEffect.
+ 
