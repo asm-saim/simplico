@@ -36,7 +36,14 @@ const Navbar = () => {
                     </ul>
                 </div>
                 <div className="navbar-end">
-                    <button className="btn border-none text-base rounded-lg bg-gradient-to-br from-[#0B2F5B] to-[#3B82F6]"><FaGithub /> Contribute</button>
+                    <a
+                        href="https://github.com/asm-saim/simplico"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="btn border-none text-base rounded-lg bg-gradient-to-br from-[#0B2F5B] to-[#3B82F6]"
+                    >
+                        <FaGithub /> Contribute
+                    </a>
                 </div>
             </div>
         </div>

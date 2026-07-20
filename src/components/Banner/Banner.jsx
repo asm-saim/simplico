@@ -10,8 +10,24 @@ const Banner = () => {
                 <span className='text-blue-400'>Productive</span> Apps</h1>
             <p className='text-center text-gray-300 italic'>At Simplico, we craft innovative apps designed to make everyday life simpler, smarter, and more exciting. <br /> Our goal is to turn your ideas into digital experiences that truly make an impact.</p>
             <div className='flex items-center justify-center space-x-5'>
-                <button className="btn border-none text-base rounded-lg bg-gradient-to-br from-[#0B2F5B] to-[#3B82F6]"><BsGooglePlay /> Google Play</button>
-                <button className="btn border-none text-base rounded-lg bg-gradient-to-br from-[#0B2F5B] to-[#3B82F6]"><RiAppStoreFill /> App Store</button>
+                <a
+                    href="https://play.google.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btn border-none text-base rounded-lg bg-gradient-to-br from-[#0B2F5B] to-[#3B82F6]"
+                >
+                    <BsGooglePlay />
+                    Google Play
+                </a>
+                <a
+                    href="https://www.apple.com/app-store/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btn border-none text-base rounded-lg bg-gradient-to-br from-[#0B2F5B] to-[#3B82F6]"
+                >
+                    <RiAppStoreFill />
+                    App Store
+                </a>
             </div>
             <img className='w-[568px]' src={bannerImg} alt="" />
         </div>
