@@ -11,3 +11,11 @@ Called the Root component in the Routes home page(/).
 //
 created a Error element, which will be called which , wrong routes enter.
 Called it to the routes home pages(/).
+
+//
+add children array in the the routes, Inside it all the dynamic page will routes.
+So, far,Routes has:
+ path:"/",
+ component:<Root>,
+ errorElement:,
+ children:[]
