@@ -2,9 +2,11 @@ import React from 'react';
 
 const Footer = () => {
     return (
-        <div>
-            <h1>I am footer</h1>
-        </div>
+        <footer className="footer sm:footer-horizontal footer-center text-base-content bg-[#001931] p-4">
+            <aside>
+                <p>Copyright © {new Date().getFullYear()} - All right reserved by Simplico.Inc</p>
+            </aside>
+        </footer>
     );
 };
 
