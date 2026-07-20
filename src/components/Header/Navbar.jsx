@@ -23,11 +23,11 @@ const Navbar = () => {
                             {list}
                         </ul>
                     </div>
-                    <Link to="/">
-                        <button className='flex items-center space-x-1.5 cursor-pointer px-0'>
-                            <img src={logo} className='w-8' alt="" />
-                            <a className=" text-xl font-semibold">Simplico</a>
-                        </button>
+                    <Link to="/"
+                        className="flex items-center space-x-1.5 cursor-pointer px-0"
+                    >
+                        <img src={logo} className="w-8" alt="Simplico logo" />
+                        <span className="text-xl font-semibold">Simplico</span>
                     </Link>
                 </div>
                 <div className="navbar-center hidden lg:flex">

@@ -1,0 +1,662 @@
+[
+    {
+        "image": "https://i.ibb.co/forest-app.png",
+        "title": "Forest: Focus for Productivity",
+        "companyName": "Seekrtech",
+        "id": 1,
+        "description": "Stay focused and grow virtual trees while avoiding distractions.",
+        "size": 58,
+        "reviews": 128400,
+        "ratingAvg": 4.7,
+        "downloads": 50000000,
+        "ratings": [
+            {
+                "name": "1 star",
+                "count": 2400
+            },
+            {
+                "name": "2 star",
+                "count": 3700
+            },
+            {
+                "name": "3 star",
+                "count": 11200
+            },
+            {
+                "name": "4 star",
+                "count": 41200
+            },
+            {
+                "name": "5 star",
+                "count": 69900
+            }
+        ]
+    },
+    {
+        "image": "https://i.ibb.co/smplan-app.png",
+        "title": "SmPlan: ToDo List with Reminder",
+        "companyName": "Simple Mobile Tools",
+        "id": 2,
+        "description": "Manage tasks, reminders, and notes in one place.",
+        "size": 35,
+        "reviews": 46200,
+        "ratingAvg": 4.5,
+        "downloads": 10000000,
+        "ratings": [
+            {
+                "name": "1 star",
+                "count": 1200
+            },
+            {
+                "name": "2 star",
+                "count": 1800
+            },
+            {
+                "name": "3 star",
+                "count": 4200
+            },
+            {
+                "name": "4 star",
+                "count": 14800
+            },
+            {
+                "name": "5 star",
+                "count": 24200
+            }
+        ]
+    },
+    {
+        "image": "https://i.ibb.co/flip-app.png",
+        "title": "FLIP - Focus Timer for Study",
+        "companyName": "RinaSoft",
+        "id": 3,
+        "description": "A distraction-free study timer with analytics.",
+        "size": 41,
+        "reviews": 87200,
+        "ratingAvg": 4.8,
+        "downloads": 20000000,
+        "ratings": [
+            {
+                "name": "1 star",
+                "count": 900
+            },
+            {
+                "name": "2 star",
+                "count": 1600
+            },
+            {
+                "name": "3 star",
+                "count": 5600
+            },
+            {
+                "name": "4 star",
+                "count": 25700
+            },
+            {
+                "name": "5 star",
+                "count": 53400
+            }
+        ]
+    },
+    {
+        "image": "https://i.ibb.co/pomocat-app.png",
+        "title": "Pomocat - Cute Pomodoro Timer",
+        "companyName": "Pomotime Studio",
+        "id": 4,
+        "description": "Boost productivity with adorable pomodoro sessions.",
+        "size": 29,
+        "reviews": 23800,
+        "ratingAvg": 4.6,
+        "downloads": 5000000,
+        "ratings": [
+            {
+                "name": "1 star",
+                "count": 600
+            },
+            {
+                "name": "2 star",
+                "count": 1000
+            },
+            {
+                "name": "3 star",
+                "count": 2600
+            },
+            {
+                "name": "4 star",
+                "count": 7300
+            },
+            {
+                "name": "5 star",
+                "count": 12300
+            }
+        ]
+    },
+    {
+        "image": "https://i.ibb.co/timeplanner-app.png",
+        "title": "Time Planner: Schedule & Tasks",
+        "companyName": "Time Labs",
+        "id": 5,
+        "description": "Plan your day with schedules, calendars, and tasks.",
+        "size": 51,
+        "reviews": 73500,
+        "ratingAvg": 4.4,
+        "downloads": 10000000,
+        "ratings": [
+            {
+                "name": "1 star",
+                "count": 2500
+            },
+            {
+                "name": "2 star",
+                "count": 3800
+            },
+            {
+                "name": "3 star",
+                "count": 9800
+            },
+            {
+                "name": "4 star",
+                "count": 21500
+            },
+            {
+                "name": "5 star",
+                "count": 35900
+            }
+        ]
+    },
+    {
+        "image": "https://i.ibb.co/morninghabits-app.png",
+        "title": "Morning Habits - Daily Routine",
+        "companyName": "Rise Studio",
+        "id": 6,
+        "description": "Build healthy habits and track your daily routine.",
+        "size": 32,
+        "reviews": 31800,
+        "ratingAvg": 4.5,
+        "downloads": 5000000,
+        "ratings": [
+            {
+                "name": "1 star",
+                "count": 700
+            },
+            {
+                "name": "2 star",
+                "count": 1200
+            },
+            {
+                "name": "3 star",
+                "count": 3400
+            },
+            {
+                "name": "4 star",
+                "count": 9800
+            },
+            {
+                "name": "5 star",
+                "count": 16700
+            }
+        ]
+    },
+    {
+        "image": "https://i.ibb.co/focusplant-app.png",
+        "title": "Focus Plant: Pomodoro Forest",
+        "companyName": "Shikudo",
+        "id": 7,
+        "description": "Grow virtual plants while staying focused.",
+        "size": 47,
+        "reviews": 55400,
+        "ratingAvg": 4.7,
+        "downloads": 10000000,
+        "ratings": [
+            {
+                "name": "1 star",
+                "count": 900
+            },
+            {
+                "name": "2 star",
+                "count": 1600
+            },
+            {
+                "name": "3 star",
+                "count": 4500
+            },
+            {
+                "name": "4 star",
+                "count": 16800
+            },
+            {
+                "name": "5 star",
+                "count": 31600
+            }
+        ]
+    },
+    {
+        "image": "https://i.ibb.co/alarmy-app.png",
+        "title": "Alarmy - Alarm Clock & Sleep",
+        "companyName": "DelightRoom",
+        "id": 8,
+        "description": "Wake up on time with missions and sleep tracking.",
+        "size": 69,
+        "reviews": 194500,
+        "ratingAvg": 4.6,
+        "downloads": 100000000,
+        "ratings": [
+            {
+                "name": "1 star",
+                "count": 3900
+            },
+            {
+                "name": "2 star",
+                "count": 6800
+            },
+            {
+                "name": "3 star",
+                "count": 15200
+            },
+            {
+                "name": "4 star",
+                "count": 59300
+            },
+            {
+                "name": "5 star",
+                "count": 109300
+            }
+        ]
+    },
+    {
+        "image": "https://i.ibb.co/notion-app.png",
+        "title": "Notion: Notes & Tasks",
+        "companyName": "Notion Labs",
+        "id": 9,
+        "description": "Organize notes, tasks, and projects efficiently.",
+        "size": 82,
+        "reviews": 320000,
+        "ratingAvg": 4.8,
+        "downloads": 100000000,
+        "ratings": [
+            {
+                "name": "1 star",
+                "count": 4200
+            },
+            {
+                "name": "2 star",
+                "count": 6700
+            },
+            {
+                "name": "3 star",
+                "count": 17000
+            },
+            {
+                "name": "4 star",
+                "count": 91000
+            },
+            {
+                "name": "5 star",
+                "count": 201100
+            }
+        ]
+    },
+    {
+        "image": "https://i.ibb.co/ticktick-app.png",
+        "title": "TickTick: To Do List & Calendar",
+        "companyName": "Appest Inc.",
+        "id": 10,
+        "description": "Track tasks, goals, and schedules with ease.",
+        "size": 43,
+        "reviews": 91200,
+        "ratingAvg": 4.7,
+        "downloads": 10000000,
+        "ratings": [
+            {
+                "name": "1 star",
+                "count": 1300
+            },
+            {
+                "name": "2 star",
+                "count": 2100
+            },
+            {
+                "name": "3 star",
+                "count": 6300
+            },
+            {
+                "name": "4 star",
+                "count": 28100
+            },
+            {
+                "name": "5 star",
+                "count": 53400
+            }
+        ]
+    },
+    {
+        "image": "https://i.ibb.co/todoist-app.png",
+        "title": "Todoist: Planner & Tasks",
+        "companyName": "Doist",
+        "id": 11,
+        "description": "Stay organized with powerful task management.",
+        "size": 37,
+        "reviews": 135800,
+        "ratingAvg": 4.8,
+        "downloads": 50000000,
+        "ratings": [
+            {
+                "name": "1 star",
+                "count": 1900
+            },
+            {
+                "name": "2 star",
+                "count": 2600
+            },
+            {
+                "name": "3 star",
+                "count": 8200
+            },
+            {
+                "name": "4 star",
+                "count": 40500
+            },
+            {
+                "name": "5 star",
+                "count": 82600
+            }
+        ]
+    },
+    {
+        "image": "https://i.ibb.co/habitica-app.png",
+        "title": "Habitica: Gamify Your Life",
+        "companyName": "HabitRPG",
+        "id": 12,
+        "description": "Turn your habits and tasks into a fun game.",
+        "size": 56,
+        "reviews": 44200,
+        "ratingAvg": 4.5,
+        "downloads": 5000000,
+        "ratings": [
+            {
+                "name": "1 star",
+                "count": 1100
+            },
+            {
+                "name": "2 star",
+                "count": 1700
+            },
+            {
+                "name": "3 star",
+                "count": 4900
+            },
+            {
+                "name": "4 star",
+                "count": 13400
+            },
+            {
+                "name": "5 star",
+                "count": 23100
+            }
+        ]
+    },
+    {
+        "image": "https://i.ibb.co/evernote-app.png",
+        "title": "Evernote: Notes Organizer",
+        "companyName": "Evernote Corporation",
+        "id": 13,
+        "description": "Capture notes, ideas, and tasks everywhere.",
+        "size": 75,
+        "reviews": 286000,
+        "ratingAvg": 4.4,
+        "downloads": 100000000,
+        "ratings": [
+            {
+                "name": "1 star",
+                "count": 8200
+            },
+            {
+                "name": "2 star",
+                "count": 12100
+            },
+            {
+                "name": "3 star",
+                "count": 29500
+            },
+            {
+                "name": "4 star",
+                "count": 90100
+            },
+            {
+                "name": "5 star",
+                "count": 146100
+            }
+        ]
+    },
+    {
+        "image": "https://i.ibb.co/boosted-app.png",
+        "title": "Boosted: Productivity Timer",
+        "companyName": "Aesir Labs",
+        "id": 14,
+        "description": "Track your focus sessions and productivity.",
+        "size": 24,
+        "reviews": 17400,
+        "ratingAvg": 4.6,
+        "downloads": 1000000,
+        "ratings": [
+            {
+                "name": "1 star",
+                "count": 300
+            },
+            {
+                "name": "2 star",
+                "count": 700
+            },
+            {
+                "name": "3 star",
+                "count": 1800
+            },
+            {
+                "name": "4 star",
+                "count": 5700
+            },
+            {
+                "name": "5 star",
+                "count": 8900
+            }
+        ]
+    },
+    {
+        "image": "https://i.ibb.co/fabulous-app.png",
+        "title": "Fabulous: Daily Habit Tracker",
+        "companyName": "The Fabulous",
+        "id": 15,
+        "description": "Build routines and improve your productivity.",
+        "size": 88,
+        "reviews": 162500,
+        "ratingAvg": 4.7,
+        "downloads": 50000000,
+        "ratings": [
+            {
+                "name": "1 star",
+                "count": 2100
+            },
+            {
+                "name": "2 star",
+                "count": 3700
+            },
+            {
+                "name": "3 star",
+                "count": 9200
+            },
+            {
+                "name": "4 star",
+                "count": 45200
+            },
+            {
+                "name": "5 star",
+                "count": 102300
+            }
+        ]
+    },
+    {
+        "image": "https://i.ibb.co/calendar-app.png",
+        "title": "Google Calendar",
+        "companyName": "Google LLC",
+        "id": 16,
+        "description": "Manage schedules and events with ease.",
+        "size": 46,
+        "reviews": 720000,
+        "ratingAvg": 4.6,
+        "downloads": 1000000000,
+        "ratings": [
+            {
+                "name": "1 star",
+                "count": 14000
+            },
+            {
+                "name": "2 star",
+                "count": 22000
+            },
+            {
+                "name": "3 star",
+                "count": 54000
+            },
+            {
+                "name": "4 star",
+                "count": 231000
+            },
+            {
+                "name": "5 star",
+                "count": 399000
+            }
+        ]
+    },
+    {
+        "image": "https://i.ibb.co/trello-app.png",
+        "title": "Trello: Organize Anything",
+        "companyName": "Atlassian",
+        "id": 17,
+        "description": "Collaborate and organize projects visually.",
+        "size": 39,
+        "reviews": 101400,
+        "ratingAvg": 4.5,
+        "downloads": 10000000,
+        "ratings": [
+            {
+                "name": "1 star",
+                "count": 2300
+            },
+            {
+                "name": "2 star",
+                "count": 3100
+            },
+            {
+                "name": "3 star",
+                "count": 7900
+            },
+            {
+                "name": "4 star",
+                "count": 30200
+            },
+            {
+                "name": "5 star",
+                "count": 57900
+            }
+        ]
+    },
+    {
+        "image": "https://i.ibb.co/focustodo-app.png",
+        "title": "Focus To-Do: Pomodoro Timer",
+        "companyName": "Pomodoro Inc.",
+        "id": 18,
+        "description": "Combine pomodoro sessions with task tracking.",
+        "size": 27,
+        "reviews": 69200,
+        "ratingAvg": 4.7,
+        "downloads": 10000000,
+        "ratings": [
+            {
+                "name": "1 star",
+                "count": 1000
+            },
+            {
+                "name": "2 star",
+                "count": 1400
+            },
+            {
+                "name": "3 star",
+                "count": 4300
+            },
+            {
+                "name": "4 star",
+                "count": 20800
+            },
+            {
+                "name": "5 star",
+                "count": 41700
+            }
+        ]
+    },
+    {
+        "image": "https://i.ibb.co/engross-app.png",
+        "title": "Engross: Focus Timer & Planner",
+        "companyName": "Engross Apps",
+        "id": 19,
+        "description": "Track productivity and create study schedules.",
+        "size": 33,
+        "reviews": 38200,
+        "ratingAvg": 4.6,
+        "downloads": 5000000,
+        "ratings": [
+            {
+                "name": "1 star",
+                "count": 700
+            },
+            {
+                "name": "2 star",
+                "count": 1100
+            },
+            {
+                "name": "3 star",
+                "count": 2600
+            },
+            {
+                "name": "4 star",
+                "count": 11300
+            },
+            {
+                "name": "5 star",
+                "count": 22500
+            }
+        ]
+    },
+    {
+        "image": "https://i.ibb.co/daylio-app.png",
+        "title": "Daylio: Mood & Habit Tracker",
+        "companyName": "Habitics",
+        "id": 20,
+        "description": "Track moods, habits, and daily activities.",
+        "size": 61,
+        "reviews": 258000,
+        "ratingAvg": 4.8,
+        "downloads": 50000000,
+        "ratings": [
+            {
+                "name": "1 star",
+                "count": 2100
+            },
+            {
+                "name": "2 star",
+                "count": 3400
+            },
+            {
+                "name": "3 star",
+                "count": 9100
+            },
+            {
+                "name": "4 star",
+                "count": 73400
+            },
+            {
+                "name": "5 star",
+                "count": 170000
+            }
+        ]
+    }
+]
