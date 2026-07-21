@@ -4,6 +4,7 @@ import { useLoaderData, useParams } from 'react-router';
 import downloadImg from "../../assets/icon-downloads.png"
 import ratingImg from "../../assets/icon-ratings.png"
 import reviewsImg from "../../assets/icon-review.png"
+import { BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer } from "recharts";
 
 const AppDetails = () => {
 
@@ -23,7 +24,8 @@ const AppDetails = () => {
     }
 
     //destructuring:
-    const { image, title, companyName, description, reviews, ratingAvg, downloads } = singleAppDetail;
+    const { image, title, companyName, description, reviews, ratingAvg, downloads, ratings } = singleAppDetail;
+
 
     //convert numbers to K  M  B:
     const formatDownloads = (downloads) => {
@@ -77,11 +79,15 @@ const AppDetails = () => {
     //     ]
     // },
 
+    //sort ratings:
+    const sortedRatings = [...ratings].sort(
+        (a, b) => parseInt(b.name) - parseInt(a.name)
+    );
 
 
     return (
-        <div className='max-w-7xl mx-auto border'>
-            <div className='flex my-10'>
+        <div className='max-w-7xl mx-auto my-10'>
+            <div className='flex '>
                 <div className='w-1/3'>
                     <img src={image} className='w-90' alt="" />
                 </div>
@@ -89,7 +95,7 @@ const AppDetails = () => {
                     <h1 className='text-4xl font-bold'>{title}</h1>
                     <h2 className='text-xl font-semibold'>Developed by:
                         <span className='text-blue-400 font-bold'> {companyName}</span> </h2>
-                    <hr className="my-5 border-gray-500 mr-5" />
+                    <hr className="my-5 border-gray-600 " />
 
                     <div className='grid grid-cols-3 mt-10'>
                         <div className='space-y-2'>
@@ -114,7 +120,31 @@ const AppDetails = () => {
                 </div>
             </div>
 
-            <hr className="my-5 border-gray-500" />
+            <hr className="my-5 border-gray-600" />
+
+            {/* Ratings */}
+            <h1 className='text-2xl font-bold mt-10'>Ratings</h1>
+
+            <div className="w-full h-[300px] mt-3">
+                <ResponsiveContainer width="100%" height="100%">
+                    <BarChart data={sortedRatings} layout="vertical" >
+                        <XAxis type="number" tick={{ fill: "#9CA3AF" }} />
+
+                        <YAxis type="category" dataKey="name" tick={{ fill: "#9CA3AF" }} />
+
+                        <Tooltip />
+
+                        <Bar dataKey="count" fill="#3B82F6" />
+                    </BarChart>
+                </ResponsiveContainer>
+            </div>
+
+
+            <hr className="my-5 border-gray-600" />
+
+            {/* Description */}
+            <h1 className='text-2xl font-bold mt-10'>Description</h1>
+            <p className='text-gray-400 mt-2'>{description}</p>
 
         </div>
     );
