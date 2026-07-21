@@ -1,10 +1,10 @@
-import React from 'react';
+import { useState } from 'react';
 import { useLoaderData, useParams } from 'react-router';
-
 import downloadImg from "../../assets/icon-downloads.png"
 import ratingImg from "../../assets/icon-ratings.png"
 import reviewsImg from "../../assets/icon-review.png"
 import { BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer } from "recharts";
+import { ToastContainer, toast } from 'react-toastify';
 
 const AppDetails = () => {
 
@@ -84,6 +84,13 @@ const AppDetails = () => {
         (a, b) => parseInt(b.name) - parseInt(a.name)
     );
 
+    //install button state:
+    const [value, setValue] = useState(true)
+
+    const handleInstall = () => {
+        setValue(false)
+        toast.success("App Installed Successfully!")
+    }
 
     return (
         <div className='max-w-7xl mx-auto my-10'>
@@ -114,8 +121,15 @@ const AppDetails = () => {
                             <p className='text-4xl font-bold'>{formatDownloads(reviews)}</p>
                         </div>
                     </div>
-                    <button className="btn border-none rounded-lg text-base font-semibold bg-gradient-to-br from-[#0B2F5B] to-[#3B82F6] my-5">
-                        Install Now (240MB)
+
+                    <button
+                        onClick={handleInstall}
+                        disabled={!value}
+                        className={`btn border-none rounded-lg text-base font-semibold my-5 ${value
+                            ? "bg-gradient-to-br from-[#0B2F5B] to-[#3B82F6]"
+                            : "bg-gray-500 text-gray-200 cursor-not-allowed"
+                            }`}
+                    > {value ? "Install Now (240MB)" : "Installed"}
                     </button>
                 </div>
             </div>
