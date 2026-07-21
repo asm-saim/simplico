@@ -1,6 +1,7 @@
 import React from 'react';
 import { FiDownload } from "react-icons/fi";
 import { IoStar } from "react-icons/io5";
+import { Link } from 'react-router';
 
 const App = ({ app }) => {
     const { image, title, ratingAvg, downloads } = app;
@@ -57,18 +58,21 @@ const App = ({ app }) => {
 
 
     return (
-        <div className='bg-gray-900 rounded-lg overflow-hidden'>
-            <img className='' src={image} alt="" />
-            <div className='space-y-3 p-3 '>
-                <h3 className='font-semibold text-base'>{title}</h3>
-                <div className='flex justify-between items-center'>
-                    <p className='flex items-center gap-1 border border-blue-400 rounded-lg px-2'><FiDownload /> {formatDownloads(downloads)}</p>
-                    <p className='flex items-center gap-1  border border-blue-400 rounded-lg px-2'><IoStar /> {ratingAvg}</p>
+        <Link to={`/app-details/${app.id}`}>
+            <div className='bg-gray-900 rounded-lg overflow-hidden'>
+                <img className='' src={image} alt="" />
+                <div className='space-y-3 p-3 '>
+                    <h3 className='font-semibold text-base'>{title}</h3>
+                    <div className='flex justify-between items-center'>
+                        <p className='flex items-center gap-1 border border-blue-400 rounded-lg px-2'><FiDownload /> {formatDownloads(downloads)}</p>
+                        <p className='flex items-center gap-1  border border-blue-400 rounded-lg px-2'><IoStar /> {ratingAvg}</p>
+                    </div>
                 </div>
+
+
             </div>
+        </Link>
 
-
-        </div>
     );
 };
 
