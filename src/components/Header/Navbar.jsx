@@ -10,7 +10,7 @@ const Navbar = () => {
         <NavLink to="/installation" className={({ isActive }) => isActive ? "text-blue-400" : ""}><li className='m-3 font-semibold text-base'>Installation</li></NavLink>
     </>
     return (
-        <div className=" shadow-sm">
+        <div className="">
             <div className="navbar max-w-7xl mx-auto ">
                 <div className="navbar-start">
                     <div className="dropdown">

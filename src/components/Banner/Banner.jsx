@@ -5,7 +5,7 @@ import { RiAppStoreFill } from "react-icons/ri";
 
 const Banner = () => {
     return (
-        <div className='flex flex-col justify-center items-center space-y-8 max-w-7xl mx-auto'>
+        <div className='flex flex-col justify-center items-center space-y-8 max-w-7xl mx-auto mt-5'>
             <h1 className='text-5xl font-bold text-center leading-tight'>We Build <br />
                 <span className='text-blue-400'>Productive</span> Apps</h1>
             <p className='text-center text-gray-300 italic'>At Simplico, we craft innovative apps designed to make everyday life simpler, smarter, and more exciting. <br /> Our goal is to turn your ideas into digital experiences that truly make an impact.</p>
