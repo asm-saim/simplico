@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useLoaderData } from 'react-router';
 import { getInstalledApps, removeInstalledApp } from '../../utility/utility';
 import Installed from './Installed';
+import { MdArrowDropDown } from "react-icons/md";
 
 const Installation = () => {
 
@@ -35,7 +36,7 @@ const Installation = () => {
         setSort(type)
 
         if (type === "high-low") {
-            const sortByHighToLow = [...installedList].sort((a,b) => b.downloads - a.downloads);
+            const sortByHighToLow = [...installedList].sort((a, b) => b.downloads - a.downloads);
             setInstalledList(sortByHighToLow)
         }
 
@@ -51,7 +52,7 @@ const Installation = () => {
             <div className='flex justify-between items-center my-5'>
                 <h1 className='text-xl font-semibold'>{installedList.length} Apps Found</h1>
                 <details className="dropdown ">
-                    <summary className="btn m-1 border border-gray-400 text-base rounded-md">Sort by Downloads</summary>
+                    <summary className="btn m-1 border border-gray-500 text-base rounded-md">Sort by Downloads<MdArrowDropDown size={25}  className="-mx-1"/></summary>
                     <ul className="menu dropdown-content bg-base-100 rounded-box z-1 w-52 p-2 shadow-sm">
                         <li><a onClick={() => handelSort("high-low")}>HIGHT-LOW</a></li>
                         <li><a onClick={() => handelSort("low-high")}>LOW-HIGH</a></li>
