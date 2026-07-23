@@ -15,7 +15,7 @@ const AppDetails = () => {
 
     //load all appdata
     const appDetails = useLoaderData();
-    console.log(appDetails)
+    // console.log(appDetails)
 
     //matched clicked app
     const singleAppDetail = appDetails.find(appData => appData.id === appId)

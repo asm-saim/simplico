@@ -18,7 +18,7 @@ const Apps = () => {
             </div>
             <div className='grid grid-cols-4 gap-10 my-10'>
                 {
-                    allApps.map(app => <App key={app.key} app={app} ></App>)
+                    allApps.map(app => <App key={app.id} app={app} ></App>)
                 }
             </div>
         </div>
