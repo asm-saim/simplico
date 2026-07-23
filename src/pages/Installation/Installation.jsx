@@ -18,8 +18,8 @@ const Installation = () => {
     }, [data])
 
     return (
-        <div>
-            <h1>{installedList.length}</h1>
+        <div className='mt-5 mb-10'>
+            <h1 className='mb-5 text-xl font-semibold'>{installedList.length} Apps Found</h1>
             {
                 installedList.map(app => <Installed key={app.id} app={app} ></Installed>)
             }
