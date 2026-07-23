@@ -25,4 +25,13 @@ const addToInstalledDB = (id) => {
     return true;
 
 }
-export { addToInstalledDB, getInstalledApps };
+
+const removeInstalledApp = (id) => {
+    const storedApps = getInstalledApps();
+
+    const remainingApps = storedApps.filter(appId => appId !== id);
+
+    localStorage.setItem("appList", JSON.stringify(remainingApps));
+};
+
+export { addToInstalledDB, getInstalledApps, removeInstalledApp };

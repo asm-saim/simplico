@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useLoaderData } from 'react-router';
-import { getInstalledApps } from '../../utility/utility';
+import { getInstalledApps, removeInstalledApp } from '../../utility/utility';
 import Installed from './Installed';
 
 const Installation = () => {
@@ -17,11 +17,24 @@ const Installation = () => {
         setInstalledList(myAppList)
     }, [data])
 
+
+    //uninstall apps:
+    const handleUninstall = (id) => {
+        // Remove from localStorage
+        removeInstalledApp(id);
+
+        // Update UI immediately
+        const remaining = installedList.filter(app => app.id !== id);
+        setInstalledList(remaining);
+    };
+
     return (
         <div className='mt-5 mb-10'>
             <h1 className='mb-5 text-xl font-semibold'>{installedList.length} Apps Found</h1>
             {
-                installedList.map(app => <Installed key={app.id} app={app} ></Installed>)
+                installedList.map(app => <Installed key={app.id} app={app}
+                    handleUninstall={handleUninstall}
+                ></Installed>)
             }
         </div>
     );

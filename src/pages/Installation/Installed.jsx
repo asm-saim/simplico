@@ -2,8 +2,9 @@ import React from 'react';
 import downloadImg from "../../assets/icon-downloads.png"
 import ratingImg from "../../assets/icon-ratings.png"
 import reviewsImg from "../../assets/icon-review.png"
+import { removeInstalledApp } from '../../utility/utility';
 
-const Installed = ({ app }) => {
+const Installed = ({ app, handleUninstall }) => {
     const { image, title, id, downloads, ratingAvg, reviews } = app;
     console.log(app);
 
@@ -25,8 +26,9 @@ const Installed = ({ app }) => {
     };
 
 
+
     return (
-        <div className='flex overflow-hidden justify-between items-center rounded-lg mb-5 p-3 bg-gray-900 shadow'>
+        <div className='flex overflow-hidden justify-between items-center rounded-lg mb-5 p-3 bg-gray-900 shadow border border-gray-700'>
             <div className='flex items-center'>
                 <div className="w-25 h-25 overflow-hidden">
                     <img src={image} alt={title} className="w-full h-full object-cover"
@@ -49,7 +51,8 @@ const Installed = ({ app }) => {
                 </div>
             </div>
             <div>
-                <button className=''>Uninstalled</button>
+                <button onClick={() => handleUninstall(id)}
+                    className="btn border-none text-base rounded-lg bg-gradient-to-br from-[#0B2F5B] to-[#3B82F6]">Uninstall</button>
             </div>
         </div>
     );
