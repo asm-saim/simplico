@@ -14,15 +14,15 @@ const getInstalledApps = () => {
 const addToInstalledDB = (id) => {
 
     const storedApp = getInstalledApps();
+
     if (storedApp.includes(id)) {
-        alert("already installed")
-    }
-    else {
-        storedApp.push(id)
-        const data = JSON.stringify(storedApp)
-        localStorage.setItem("appList", data)
-        console.log(storedApp)
+        return false;
     }
 
+    storedApp.push(id);
+    localStorage.setItem("appList", JSON.stringify(storedApp));
+
+    return true;
+
 }
-export { addToInstalledDB };
+export { addToInstalledDB, getInstalledApps };

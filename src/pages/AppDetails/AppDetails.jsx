@@ -5,7 +5,7 @@ import ratingImg from "../../assets/icon-ratings.png"
 import reviewsImg from "../../assets/icon-review.png"
 import { BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer } from "recharts";
 import { ToastContainer, toast } from 'react-toastify';
-import { addToInstalledDB } from '../../utility/utility';
+import { addToInstalledDB, getInstalledApps } from '../../utility/utility';
 
 const AppDetails = () => {
 
@@ -86,18 +86,20 @@ const AppDetails = () => {
     );
 
     //install button state:
-    const [value, setValue] = useState(true)
+    const [value, setValue] = useState(!getInstalledApps().includes(appId));
 
+    //add to localStorage
     const handleInstall = () => {
-        setValue(false)
-        toast.success("App Installed Successfully!")
-    }
+        const installed = addToInstalledDB(appId);
 
-    //add to local storage:
-    const handleInstallation = (installedId) => {
+        if (installed) {
+            setValue(false);
+            toast.success("App Installed Successfully!");
+        } else {
+            toast.error("App is already installed!");
+        }
+    };
 
-        addToInstalledDB(installedId)
-    }
 
     return (
         <div className='max-w-7xl mx-auto my-10'>
@@ -130,7 +132,7 @@ const AppDetails = () => {
                     </div>
 
                     <button
-                        onClick={() => { handleInstall; handleInstallation(id) }}
+                        onClick={handleInstall}
                         disabled={!value}
                         className={`btn border-none rounded-lg text-base font-semibold my-5 ${value
                             ? "bg-gradient-to-br from-[#0B2F5B] to-[#3B82F6]"
