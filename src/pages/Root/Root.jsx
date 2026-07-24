@@ -10,25 +10,27 @@ const Root = () => {
 
     return (
         <>
-            <Navbar></Navbar>
-            <div className='max-w-7xl mx-auto'>
-                {
-                    navigation.state === "loading" ?
-                        (<div className='flex justify-center items-center min-h-[50vh]'>
-                            <ColorRing
-                                visible={true}
-                                height="80"
-                                width="80"
-                                ariaLabel="color-ring-loading"
-                                wrapperStyle={{}}
-                                wrapperClass="color-ring-wrapper"
-                                colors={['#3B82F6', '#3B82F6', '#3B82F6', '#3B82F6', '#3B82F6']}
-                            />
-                        </div>)
-                        : (<Outlet></Outlet>)
-                }
+            <div className="min-h-screen flex flex-col">
+                <Navbar></Navbar>
+                <div className='max-w-7xl mx-auto flex-1 w-full'>
+                    {
+                        navigation.state === "loading" ?
+                            (<div className='flex justify-center items-center min-h-[50vh]'>
+                                <ColorRing
+                                    visible={true}
+                                    height="80"
+                                    width="80"
+                                    ariaLabel="color-ring-loading"
+                                    wrapperStyle={{}}
+                                    wrapperClass="color-ring-wrapper"
+                                    colors={['#3B82F6', '#3B82F6', '#3B82F6', '#3B82F6', '#3B82F6']}
+                                />
+                            </div>)
+                            : (<Outlet></Outlet>)
+                    }
+                </div>
+                <Footer></Footer>
             </div>
-            <Footer></Footer>
         </>
     );
 };
