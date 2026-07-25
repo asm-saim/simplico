@@ -6,9 +6,16 @@ import HomeApps from '../HomeApps/HomeApps';
 const Home = () => {
     return (
         <div>
-            <Banner></Banner>
-            <States></States>
-            <HomeApps></HomeApps>
+            <div className='max-w-7xl mx-auto'>
+                <Banner></Banner>
+            </div>
+            <div className=''>
+                <States></States>
+
+            </div>
+            <div className='max-w-7xl mx-auto'>
+                <HomeApps></HomeApps>
+            </div>
         </div>
     );
 };

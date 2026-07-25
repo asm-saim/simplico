@@ -12,7 +12,7 @@ const Root = () => {
         <>
             <div className="min-h-screen flex flex-col">
                 <Navbar></Navbar>
-                <div className='max-w-7xl mx-auto flex-1 w-full'>
+                <div className='flex-1'>
                     {
                         navigation.state === "loading" ?
                             (<div className='flex justify-center items-center min-h-[50vh]'>
