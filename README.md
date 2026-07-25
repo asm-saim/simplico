@@ -2,13 +2,11 @@
 
 # Simplico
 
-A modern and responsive React application that showcases popular mobile applications in a clean App Store-style interface. Users can browse apps, search instantly, view detailed app information, install apps with persistent local storage, analyze ratings through interactive charts, and manage installed applications effortlessly.
+**Simplico** is a modern and responsive React application that showcases popular mobile applications in a clean App Store-style interface. Users can browse apps, search instantly, view detailed app information, install apps with persistent local storage, analyze ratings through interactive charts, and manage installed applications effortlessly.
 
 ------------------------------------------------------------------------
 
 ## Overview
-
-**Simplico** is a responsive app marketplace built with React. It provides users with an intuitive platform to discover mobile applications, explore detailed information, and manage installations.
 
 The application allows users to:
 
@@ -123,40 +121,39 @@ The application allows users to:
 
 ------------------------------------------------------------------------
 
+## Getting Started
+ 
+```bash
+# Clone the repository
+git clone https://github.com/asm-saim/simplico.git
+cd simplico
+ 
+# Install dependencies
+npm install
+ 
+# Start the dev server
+npm run dev
+ 
+# Build for production
+npm run build
+```
+ 
+The app runs locally at `http://localhost:5173` by default (Vite's default port).
+ 
+---
+ 
 ## Pages
-
-### Home
-
-- Hero Banner
-- Statistics
-- Top Apps
-- Footer
-
-### Apps
-
-- Search Bar
-- App Count
-- All Apps Grid
-
-### App Details
-
-- App Information
-- Rating Overview
-- Downloads & Reviews
-- Install Button
-- Rating Chart
-- Description
-
-### My Installation
-
-- Installed Apps
-- Download Sorting
-- Uninstall Feature
-
-### Error Page
-
-- Custom 404 Page
-- Invalid Route Handling
+ 
+| Page | Contents |
+|---|---|
+| **Home** | Hero banner, statistics, top apps, footer |
+| **Apps** | Search bar, app count, full apps grid |
+| **App Details** | App info, rating overview, downloads & reviews, install button, rating chart, description |
+| **My Installation** | Installed apps list, download sorting, uninstall action |
+| **Error Page** | Custom 404 for invalid routes |
+ 
+---
+ 
 
 ------------------------------------------------------------------------
 
