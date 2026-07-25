@@ -11,7 +11,7 @@ const Navbar = () => {
     </>
     return (
         <div className="">
-            <div className="navbar max-w-7xl mx-auto ">
+            <div className="navbar max-w-7xl mx-auto px-4 sm:px-6 lg:px-0">
                 <div className="navbar-start">
                     <div className="dropdown">
                         <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -19,15 +19,15 @@ const Navbar = () => {
                         </div>
                         <ul
                             tabIndex="-1"
-                            className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
+                            className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-48 sm:w-52 p-2 shadow">
                             {list}
                         </ul>
                     </div>
                     <Link to="/"
                         className="flex items-center space-x-1.5 cursor-pointer px-0"
                     >
-                        <img src={logo} className="w-8" alt="Simplico logo" />
-                        <span className="text-xl font-semibold">Simplico</span>
+                        <img src={logo} className="w-7 sm:w-8" alt="Simplico logo" />
+                        <span className="text-lg sm:text-xl font-semibold">Simplico</span>
                     </Link>
                 </div>
                 <div className="navbar-center hidden lg:flex">
@@ -40,9 +40,10 @@ const Navbar = () => {
                         href="https://github.com/asm-saim/simplico"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="btn border-none text-base rounded-lg bg-gradient-to-br from-[#0B2F5B] to-[#3B82F6]"
+                        className="btn btn-sm sm:btn-md border-none text-sm sm:text-base rounded-lg bg-gradient-to-br from-[#0B2F5B] to-[#3B82F6]"
                     >
-                        <FaGithub /> Contribute
+                        <FaGithub />
+                        <span className="hidden sm:inline">Contribute</span>
                     </a>
                 </div>
             </div>

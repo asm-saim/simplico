@@ -47,24 +47,26 @@ const Installation = () => {
     }
 
     return (
-        <div className=''>
+        <div className='px-4 sm:px-6 lg:px-8'>
 
-            <div className='flex justify-between items-center my-5'>
-                <h1 className='text-xl font-semibold'>{installedList.length} Apps Found</h1>
-                <details className="dropdown ">
-                    <summary className="btn m-1 border border-gray-500 text-base rounded-md">Sort by Downloads<MdArrowDropDown size={25}  className="-mx-1"/></summary>
-                    <ul className="menu dropdown-content bg-base-100 rounded-box z-1 w-52 p-2 shadow-sm">
+            <div className='flex flex-col sm:flex-row sm:justify-between sm:items-center gap-3 my-5'>
+                <h1 className='text-lg sm:text-xl font-semibold'>{installedList.length} Apps Found</h1>
+                <details className="dropdown self-start sm:self-auto">
+                    <summary className="btn btn-sm sm:btn-md m-1 border border-gray-500 text-sm sm:text-base rounded-md">Sort by Downloads<MdArrowDropDown size={25} className="-mx-1" /></summary>
+                    <ul className="menu dropdown-content bg-base-100 rounded-box z-1 w-48 sm:w-52 p-2 shadow-sm">
                         <li><a onClick={() => handelSort("high-low")}>HIGHT-LOW</a></li>
                         <li><a onClick={() => handelSort("low-high")}>LOW-HIGH</a></li>
                     </ul>
                 </details>
             </div>
 
-            {
-                installedList.map(app => <Installed key={app.id} app={app}
-                    handleUninstall={handleUninstall}
-                ></Installed>)
-            }
+            <div className='flex flex-col gap-3 sm:gap-4'>
+                {
+                    installedList.map(app => <Installed key={app.id} app={app}
+                        handleUninstall={handleUninstall}
+                    ></Installed>)
+                }
+            </div>
         </div>
     );
 };
