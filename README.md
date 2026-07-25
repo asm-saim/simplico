@@ -1,4 +1,4 @@
-<img src="./src/assets/logo.png" width="170"/>
+<img src="./src/assets/logo.png" width="150"/>
 
 # Simplico
 
